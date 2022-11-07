@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #f5f7fb;
+}
+.welcome--title {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31.25px;
+  line-height: 37px;
+  text-align: center;
+  color: #293264;
+  margin: 0;
+  margin-bottom: 7px;
+}
+.welcome--p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #293264;
+  margin-bottom: 29px;
+}
+.welcome--button {
+  font-family: "Inter", sans-serif;
+  width: 193px;
+  height: 52px;
+  background: #4d5b9e;
+  border-radius: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #f5f7fb;
+  border: none;
+  cursor: pointer;
+}
+main > div {
+  text-align: left;
+}
+.optionToRender {
+  max-width: 399px;
+  /* border: solid red 1px; */
+}
+.gameP {
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #293264;
+  margin-bottom: 12px;
+  width: 399px;
+}
+.gameButton {
+  min-width: 65.92px;
+  min-height: 20.65px;
+  height: fit-content;
+  border: 0.794239px solid #4d5b9e;
+  border-radius: 7.94239px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+  margin-right: 12.71px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+hr {
+  width: 399px;
+  height: 0px;
+  border: 0.794239px solid #dbdef0;
+  margin-bottom: 15px;
+}
+.checkButton {
+  width: 120px;
+  height: 35px;
+  background: #4d5b9e;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #f5f7fb;
+  cursor: pointer;
+}
+.resultsP {
+  display: inline-block;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.8px;
+  line-height: 15px;
+  text-align: center;
+  color: #293264;
+  margin-right: 10px;
+}
+.playAgain {
+  width: 104px;
+  height: 35px;
+  background: #4d5b9e;
+  border-radius: 10px;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #f5f7fb;
+  cursor: pointer;
+}
+.selected {
+  background-color: #d6dbf5;
+  border: none;
+}
+.notAPick {
+  pointer-events: none;
+}
+
+.correct {
+  background-color: #94d7a2;
+  border: none;
+}
+.incorrect {
+  background: #f8bcbc;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.24px;
+  line-height: 12px;
+  text-align: center;
+  color: #293264;
+  border: none;
+  opacity: 60%;
+}
+.opacityDown {
+  opacity: 60%;
+  background-color: #f5f7fb;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  .main > div {
+    text-align: center;
+  }
+  .optionToRender {
+    margin-left: 5px;
+  }
+  .gameP {
+    width: 350px;
+  }
+
+  hr {
+    width: 350px;
+  }
+}
