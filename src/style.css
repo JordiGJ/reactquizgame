@@ -179,4 +179,9 @@ hr {
   hr {
     width: 350px;
   }
+  main {
+    min-height: 600px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 }
