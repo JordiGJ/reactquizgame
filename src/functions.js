@@ -34,6 +34,8 @@ function reggexer(str) {
   const quotationRegex8 = /&ntilde;/gm; // "ñ"
   const quotationRegex9 = /&uuml;/gm; // "ü"
   const quotationRegex10 = /&Uuml;/gm; // "Ü"
+  const quotationRegex11 = /&ldquo/gm; // "“"
+  const quotationRegex12 = /&rdquo/gm; // "”"
   return str
     .replace(quotationRegex, '"')
     .replace(quotationRegex2, "'")
@@ -44,7 +46,9 @@ function reggexer(str) {
     .replace(quotationRegex7, "ã")
     .replace(quotationRegex8, "ñ")
     .replace(quotationRegex9, "ü")
-    .replace(quotationRegex10, "Ü");
+    .replace(quotationRegex10, "Ü")
+    .replace(quotationRegex11, "“")
+    .replace(quotationRegex12, "”");
 }
 
 //
